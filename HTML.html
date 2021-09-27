@@ -1,19 +1,22 @@
 <div class="container">
   <header class="header">
-    <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+  <meta charset="utf-8">
+  <title></title>
+    <h1 id="title" class="text-center">Valorant Survey Form</h1>
     <p id="description" class="description text-center">
       Thank you for taking the time to help us improve the platform
     </p>
   </header>
   <form id="survey-form">
     <div class="form-group">
-      <label id="name-label" for="name">Name</label>
+      <label id="name-label" for="name">Username</label>
       <input
         type="text"
         name="name"
         id="name"
         class="form-control"
-        placeholder="Enter your name"
+        placeholder="Enter your Username"
         required
       />
     </div>
@@ -30,7 +33,7 @@
     </div>
     <div class="form-group">
       <label id="number-label" for="number"
-        >Age<span class="clue">(optional)</span></label
+        >Level<span class="clue">(optional)</span></label
       >
       <input
         type="number"
@@ -39,23 +42,36 @@
         min="10"
         max="99"
         class="form-control"
-        placeholder="Age"
+        placeholder="Rank"
       />
     </div>
     <div class="form-group">
-      <p>Which option best describes your current role?</p>
+      <p>Who among the Agent in Valorant do you think is Overpowered?</p>
       <select id="dropdown" name="role" class="form-control" required>
-        <option disabled selected value>Select current role</option>
-        <option value="student">Student</option>
-        <option value="job">Full Time Job</option>
-        <option value="learner">Full Time Learner</option>
-        <option value="preferNo">Prefer not to say</option>
-        <option value="other">Other</option>
+        <option disabled selected value>Select a Agent</option>
+        <option value="Astra">Astra</option>
+        <option value="Breach">Breach</option>
+        <option value="Brimstome">Brimstome</option>
+        <option value="Cypher">Cypher</option>
+        <option value="Jett">Jett</option>
+        <option value="Kay/O">Kay/O</option>
+        <option value="Killjoy">Killjoy</option>
+        <option value="Omen">Omen</option>
+        <option value="Phoenix">Phoenix</option>
+        <option value="Raze">Raze</option>
+        <option value="Reyna">Reyna</option>
+         <option value="Raze">Raze</option>
+          <option value="Sage">Sage</option>
+          <option value="Skye">Skye</option>
+          <option value="Sova">Sova</option>
+          <option value="Viper">Viper</option>
+          <option value="Yoru/O">Yoru</option>
+
       </select>
     </div>
 
     <div class="form-group">
-      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <p>Would you rate how Overpowered the agent is?</p>
       <label>
         <input
           name="user-recommend"
@@ -63,7 +79,7 @@
           type="radio"
           class="input-radio"
           checked
-        />Definitely</label
+        />Slightly Overpowered</label
       >
       <label>
         <input
@@ -71,7 +87,7 @@
           value="maybe"
           type="radio"
           class="input-radio"
-        />Maybe</label
+        />Highly Overpowered</label
       >
 
       <label
@@ -80,20 +96,20 @@
           value="not-sure"
           type="radio"
           class="input-radio"
-        />Not sure</label
+        />Not Overpowered at all</label
       >
     </div>
 
     <div class="form-group">
       <p>
-        What is your favorite feature of freeCodeCamp?
+        What abilities made the agent Overpowered?
       </p>
       <select id="most-like" name="mostLike" class="form-control" required>
         <option disabled selected value>Select an option</option>
-        <option value="challenges">Challenges</option>
-        <option value="projects">Projects</option>
-        <option value="community">Community</option>
-        <option value="openSource">Open Source</option>
+        <option value="challenges">1st Skill</option>
+        <option value="projects">2nd Skill</option>
+        <option value="community">3rd Skil</option>
+        <option value="openSource">Ultimate</option>
       </select>
     </div>
 
@@ -109,7 +125,7 @@
           value="front-end-projects"
           type="checkbox"
           class="input-checkbox"
-        />Front-end Projects</label
+        />Nerfed Ability Damage </label
       >
       <label>
         <input
@@ -117,7 +133,7 @@
           value="back-end-projects"
           type="checkbox"
           class="input-checkbox"
-        />Back-end Projects</label
+        />Nerfed Ability Casting Time </label
       >
       <label
         ><input
@@ -125,7 +141,7 @@
           value="data-visualization"
           type="checkbox"
           class="input-checkbox"
-        />Data Visualization</label
+        />Nerfed Ability Duration </label
       >
       <label
         ><input
@@ -133,68 +149,13 @@
           value="challenges"
           type="checkbox"
           class="input-checkbox"
-        />Challenges</label
+        />Nerfed Ability Animation </label
       >
-      <label
-        ><input
-          name="prefer"
-          value="open-source-community"
-          type="checkbox"
-          class="input-checkbox"
-        />Open Source Community</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="gitter-help-rooms"
-          type="checkbox"
-          class="input-checkbox"
-        />Gitter help rooms</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="videos"
-          type="checkbox"
-          class="input-checkbox"
-        />Videos</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="city-meetups"
-          type="checkbox"
-          class="input-checkbox"
-        />City Meetups</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="wiki"
-          type="checkbox"
-          class="input-checkbox"
-        />Wiki</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="forum"
-          type="checkbox"
-          class="input-checkbox"
-        />Forum</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="additional-courses"
-          type="checkbox"
-          class="input-checkbox"
-        />Additional Courses</label
-      >
+      
     </div>
 
     <div class="form-group">
-      <p>Any comments or suggestions?</p>
+      <p>Any comments?</p>
       <textarea
         id="comments"
         class="input-textarea"
